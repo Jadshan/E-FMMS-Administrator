@@ -1,16 +1,6 @@
-<h1>View Blog</h1>
-<form *ngIf="post" class="col-5" (ngSubmit)="onSubmit()">
-  <div class="mb-3">
-    <label for="exampleInputEmail1">Id</label>
-    <input
-      type="text"
-      class="form-control"
-      name="id"
-      readonly
-      disabled
-      [(ngModel)]="post.id"
-    />
-  </div>
+<h1>Add New Blog</h1>
+<form *ngIf="post" class="col-5" (ngSubmit)="onAddPost()">
+ 
   <div class="mb-3">
     <label for="exampleInputEmail1">Title</label>
     <input
@@ -95,4 +85,3 @@
   <button class="btn btn-primary">Submit</button>
 </form>
 
-<mat-progress-bar *ngIf="isLoadingPost" mode="indeterminate"></mat-progress-bar>

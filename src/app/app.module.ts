@@ -9,6 +9,13 @@ import { HomeComponent } from './components/home/home.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ViewPostComponent } from './components/view-post/view-post.component'
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '../../MaterialModule';
+import { AddPostComponent } from './components/add-post/add-post.component';
+import { ProductsComponent } from './components/product/products/products.component';
+import { ViewProductComponent } from './components/product/view-product/view-product.component';
+import { AddProductComponent } from './components/product/add-product/add-product.component';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +23,10 @@ import { FormsModule } from '@angular/forms';
     PostsComponent,
     HomeComponent,
     ViewPostComponent,
+    AddPostComponent,
+    ProductsComponent,
+    ViewProductComponent,
+    AddProductComponent,
    
   ],
   imports: [
@@ -23,7 +34,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

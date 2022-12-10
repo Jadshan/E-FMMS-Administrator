@@ -5,8 +5,8 @@ export interface post {
   summary: string;
   urlHandle: string;
   author: string;
-  visible: string;
-  publishedDate: string;
-  updatedDate: string;
+  visible: boolean;
+  publishedDate: Date;
+  updatedDate: Date;
   featuredImageUrl: string;
 }
